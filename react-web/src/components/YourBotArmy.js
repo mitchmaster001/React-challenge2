@@ -11,7 +11,7 @@ function YourBotArmy() {
   }
 
   function deleteBot(bot) {
-    fetch(`  http://localhost:8001/bots/${bot.id}`, {
+    fetch(`  https://data-9srb.onrender.com/bots/${bot.id}`, {
       method: "DELETE",
     })
       .then((res) => {

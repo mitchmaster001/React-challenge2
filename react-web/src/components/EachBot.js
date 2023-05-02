@@ -4,7 +4,7 @@ import '../App.css'
 function EachBot({bot, onClick, listedBots, setListedBots}) {
 
     function removeBot(id){
-        fetch(`http://localhost:8001/bots/${id}`, { 
+        fetch(`https://data-9srb.onrender.com/bots/${id}`, { 
         method: 'DELETE' 
     })
         .then(() => {
